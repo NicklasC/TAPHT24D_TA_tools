@@ -1,0 +1,22 @@
+body {
+  background-color: powderblue;
+}
+h1 {
+  color: black;
+}
+p {
+  /*color: red;*/
+}
+hr {
+    height: 3px;
+    background-color: black;
+    border: none;
+}
+.recipe-image {
+    width: 70%;
+    height: auto;
+}
+
+.recipie-introduction {
+    font-family: 'Roboto', sans-serif;
+}
