@@ -24,7 +24,7 @@ def test_sprint_review(page: Page):
     last_button = locator.get_by_text("Last")
     last_button.click()
 
-    page.pause()
+    #page.pause()
     # Hitta button med texten "Sprint planning"
     sprint_planning_button = page.get_by_role("button").get_by_text(re.compile("Present your work to the"))
     expect(sprint_planning_button).to_be_visible()
@@ -41,7 +41,7 @@ def test_sprint_review(page: Page):
     expect(sprint_is_complete_button).to_be_visible()
     sprint_is_complete_button.click()
 
-    page.pause()
+    # page.pause()
     locator = page.get_by_role("button")
     start_over = locator.get_by_text("Start over")
     expect(start_over).to_be_visible()
